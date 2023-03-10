@@ -1,8 +1,8 @@
-def contains_hello(string):
-    if string.find("hello") != -1:
-        return True
+def truncate_string(string):
+    newstring = string[0:1] + "..."
+    if len(string) > 10:
+        return newstring
     else:
-        return False
-
-
-print(contains_hello("HELLO world"))
+        return string
+    
+print(truncate_string("This aint"))
